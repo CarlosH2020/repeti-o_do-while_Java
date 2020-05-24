@@ -29,10 +29,12 @@ public class repeticao_ex3 {
             valor = leitor.nextInt();
             ++cont; 
           soma = soma + valor;
+          media = soma/20;
           
         } while (cont <= 20);
          
          System.out.println(soma);
+         System.out.println(media);
         
         
             

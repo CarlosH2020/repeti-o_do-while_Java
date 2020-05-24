@@ -26,7 +26,7 @@ public class repeticao_ex5 {
         double salario;
         float altura;
         String sexo ;
-        String quant = "f";
+       
         
         System.out.println("Cadastro de dados funcionários");
         do {
@@ -43,16 +43,16 @@ public class repeticao_ex5 {
                 altura = maior;
             }if(altura < menor){
                 altura = menor;
-            }if(!(quant ==sexo)){
-                quant = sexo;
-            } 
+            }if(salario <= 1000 && sexo == "f"){
+                cont = cont + 1;
+            }
             
-        } while (cont <= 20);
+        } while (cont <= 2);
         
         System.out.println("Média salárial:"+soma);
         System.out.println("Maior altura:"+maior 
             +"\nMenor altura:"+ menor);
-       System.out.println("quantidade de mulheres com salário até R$1.000,00 :"+quant);
+       System.out.println("quantidade de mulheres com salário até R$1.000,00 :"+cont);
         
         
     }
